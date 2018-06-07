@@ -1,4 +1,21 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@font-face {
+    font-family: 'Noto Sans';
+    src: local('Noto Sans'), local('NotoSans'), url('notosans.woff2') format('woff2'), url('notosans.woff') format('woff'), url('notosans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), local('Montserrat-Regular'), url('montserrat.woff2') format('woff2'), url('montserrat.woff') format('woff'), url('montserrat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url('montserratbold.woff2') format('woff2'), url('montserratbold.woff') format('woff'), url('montserratbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
 
 ::-moz-selection {
@@ -161,41 +178,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 10px;
 }
 
-#workwrap {	
-	background: url(../img/work.jpg) no-repeat center top fixed;
-	margin-top: -70px;
-	padding-top: 250px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 750px;
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#workwrap h1 {
-	color:#ffffff;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	letter-spacing: 4px;
-	font-size: 80px;
-	font-weight: bold;
-}
-
-#workwrap h4 {
-	font-weight: 400;
-	color: #ffffff
-}
-
 #aboutwrap {	
 	background: url(../img/about_me.jpg) no-repeat center top fixed;
 	margin-top: -70px;
@@ -217,6 +199,13 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+.social-name {
+	display: none;
+	font-size: 2rem;
+	margin-left: 25px;
+	color: #2f2f2f;
+}
+
 .about_info {
 	font-family: 'Noto Sans', sans-serif;
 }
@@ -235,12 +224,32 @@ h1, h2, h3, h4, h5, h6 {
 	opacity: 0.4;
 }
 
-.slick-arrow {
-	width: 40px;
-	height: 40px;
-	background-color: red;
-	color: #fff;
-	position: absolute;
-	top: 50%;
-	right: 0;
+.slider-content {
+	margin: auto;
+    padding: 20px;
+    width: 80%;
+}
+
+.slick-prev:before, .slick-next:before {
+	color: #1abc9c !important;
+}
+
+.job {
+	margin-left: 100px;
+}
+
+@media (max-width: 766px) {
+	.social-name {
+		display: inline-block;
+	}
+
+	#headerwrap h1{
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 415px) {
+	#headerwrap h1{
+		font-size: 30px;
+	}
 }
