@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #bdbdbd;
+}
+
 .navbar-default .navbar-brand {
 	color: #1abc9c;
 }
@@ -71,6 +75,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-default .navbar-nav > li > a {
 	color: #1abc9c;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: white;
 }
 
 .skills {
@@ -202,6 +210,12 @@ h1, h2, h3, h4, h5, h6 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.gallery-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .gallery {
