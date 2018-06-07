@@ -82,17 +82,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skills {
+	width: 100%;
+	background-color: #e0e0e0;
+}
+
+.skills_list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-.skills li{
+.skills_list li{
 	list-style-type: none;
 	padding: 5px;
 	margin-left: 10px;
 	margin-top: 10px;
-	background-color: #e0e0e0;
+	background-color: #bdbdbd;
 }
 
 #headerwrap {
@@ -212,6 +217,10 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+.about_info {
+	font-family: 'Noto Sans', sans-serif;
+}
+
 .gallery-container {
 	display: flex;
 	justify-content: space-between;
@@ -224,4 +233,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .gallery img:hover {
 	opacity: 0.4;
+}
+
+.slick-arrow {
+	width: 40px;
+	height: 40px;
+	background-color: red;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	right: 0;
 }
