@@ -242,6 +242,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .gallery {
 	margin-top: 30px;
+	height: 170px;
+	overflow: hidden;
 }
 
 .gallery img:hover {
@@ -285,8 +287,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
 	#headerwrap h1{
 		font-size: 30px;
+	}
+
+	.gallery {
+		height: auto;
 	}
 }
