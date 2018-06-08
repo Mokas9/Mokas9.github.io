@@ -51,6 +51,9 @@ hr {
 	margin-bottom: 80px;
 }
 
+.noscroll {
+	overflow: hidden;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -66,6 +69,26 @@ h1, h2, h3, h4, h5, h6 {
     color: #4a4a4a;
 }
 
+.navigation {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 100;
+
+	background-color: #f2f2f2;
+	transition: background-color 200ms linear;
+}
+
+.navbar-transparent {
+    background-color: rgba(247, 247, 247, 0);
+    transition: background-color 200ms linear;
+}
 
 .navbar-brand {
 	font-weight: 700;
@@ -74,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
 	color: #bdbdbd;
 }
+
 
 .navbar-default .navbar-brand {
 	color: #1abc9c;
@@ -238,9 +262,18 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 100px;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 768px) {
+	.nav {
+		background-color: #f2f2f2d0;
+	}
+
 	.social-name {
 		display: inline-block;
+	}
+
+	.slider-content {
+		padding: 0;
+		width: 100%;
 	}
 
 	#headerwrap h1{
