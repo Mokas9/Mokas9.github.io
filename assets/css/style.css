@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
-	font-size: 70px;
+	font-size: 60px;
 	font-weight: bold;
 }
 
@@ -256,6 +256,15 @@ h1, h2, h3, h4, h5, h6 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#aboutwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 60px;
+	font-weight: bold;
 }
 
 .social-name {
@@ -320,10 +329,26 @@ h1, h2, h3, h4, h5, h6 {
 	#headerwrap h1{
 		font-size: 50px;
 	}
+
+	#aboutwrap h1{
+		font-size: 50px;
+	}
+
+	#workwrap h1{
+		font-size: 50px;
+	}
 }
 
 @media (max-width: 425px) {
 	#headerwrap h1{
+		font-size: 30px;
+	}
+
+	#aboutwrap h1{
+		font-size: 30px;
+	}
+
+	#workwrap h1{
 		font-size: 30px;
 	}
 
