@@ -5,10 +5,8 @@ $(document).ready(function() {
   
     if (scroll === 0) {
       navigation.addClass("navbar-transparent");
-      navbar.removeClass("navbar-text-transparent");
     } else {
       navigation.removeClass("navbar-transparent");
-      navbar.addClass("navbar-text-transparent");
     }
   
     $(window).scroll(function() {
@@ -16,10 +14,8 @@ $(document).ready(function() {
   
       if (scroll >= 200) {
         navigation.removeClass("navbar-transparent");
-        navbar.addClass("navbar-text-transparent");
       } else {
         navigation.addClass("navbar-transparent");
-        navbar.removeClass("navbar-text-transparent");
       }
     });
   
