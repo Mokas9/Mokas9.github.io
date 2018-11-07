@@ -129,21 +129,35 @@ h1, h2, h3, h4, h5, h6 {
 
 .skills {
 	width: 100%;
-	background-color: #e0e0e0;
+	background-color: #f2f2f2;
 }
 
 .skills_list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .skills_list li{
 	list-style-type: none;
-	padding: 5px;
-	margin-left: 10px;
-	margin-top: 10px;
-	background-color: #bdbdbd;
+	padding: 10px 25px;
+	margin-left: 35px;
+	margin-top: 20px;
+	background-color: #dcdcdc;
+	border-radius: 20px;
+}
+
+.links-row {
+	display: flex;
+	justify-content: center;
+}
+
+.links-row p{
+	margin: 0 20px;
+}
+
+.project {
+	margin-bottom: 200px;
 }
 
 #headerwrap {
@@ -307,7 +321,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slick-prev:before, .slick-next:before {
-	color: #00CCFF !important;
+	color: #00CCFF
+	 !important;
 }
 
 .job {
